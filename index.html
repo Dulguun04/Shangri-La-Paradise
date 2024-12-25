@@ -22,7 +22,7 @@
         }
         header h1 {
             font-size: 3.5rem;
-            color:rgb(149, 174, 58);
+            color: rgb(149, 174, 58);
         }
         header p {
             font-size: 1.5rem;
@@ -176,61 +176,116 @@
             padding: 10px;
             margin-top: 20px;
         }
-    .contact {
-        padding: 40px;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.9);
-        margin: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    .contact h2 {
-        margin-bottom: 20px;
-        color: #333;
-    }
-    .contact-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    .contact-info {
-        text-align: left;
-        max-width: 400px;
-        line-height: 1.8;
-        color: #333;
-    }
-    .contact-info p {
-        margin: 5px 0;
-    }
-    .contact form {
-        max-width: 400px;
-        width: 100%;
-    }
-    .contact input, .contact textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        font-size: 1rem;
-    }
-    .contact button {
-        width: 100%;
-        padding: 10px;
-        background: #ff5722;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s;
-    }
-    .contact button:hover {
-        background: #333;
-        color: white;
-    }
-</style>
+        .contact {
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .contact h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact-info {
+            text-align: left;
+            max-width: 400px;
+            line-height: 1.8;
+            color: #333;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact form {
+            max-width: 400px;
+            width: 100%;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #333;
+            color: white;
+        }
+    
+        /* Mobile буюу жижиг дэлгэцэнд тохируулах media query */
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 10px;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            nav {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            .hero {
+                height: 300px;
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+            .menu {
+                flex-direction: column;
+            }
+            .menu-item {
+                flex-direction: column;
+            }
+            .menu-item img {
+                width: 100%;
+                height: auto;
+            }
+            .menu-item-content {
+                padding: 10px;
+            }
+            .reservation, .order, .contact {
+                padding: 20px;
+            }
+            .reservation h2, .order h2, .contact h2 {
+                font-size: 1.8rem;
+            }
+            .reservation input, .reservation textarea, .reservation button,
+            .order input, .order select, .order button,
+            .contact input, .contact textarea, .contact button {
+                font-size: 1rem;
+                padding: 8px;
+            }
+            footer {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>    
 </head>
 <body>
     <header>
